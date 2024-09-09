@@ -1,0 +1,26 @@
+/* QUESTAO 04*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: blue;
+}
+/* QUESTAO 01*/
+.destacar-texto {
+    color: white;
+}
+/* QUESTAO 02*/
+.titulo-blog {
+    color: red;
+}
+/* TESTE*/
+.st-texto {
+    color: red
+}
+/* QUESTAO 03*/
+.noticia {
+    color: red;
+    border: 1px solid black;
+}
+

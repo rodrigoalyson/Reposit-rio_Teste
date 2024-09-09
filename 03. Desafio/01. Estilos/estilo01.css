@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --cor-primeiro: #FFEAC5;
+    --cor-segundo: #FFDBB5;
+    --cor-terceiro: #603F26;
+    --fonte-primeiro: "Inter", sans-serif;
+}
+
+* {
+    border: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primeiro);
+    color: var(--cor-terceiro);
+    font-family: var(--fonte-primeiro);
+    font-size: 11px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+}
+
+.conteudo_esquerdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2vh 0 10vh;
+    gap: 1vh;
+}
+
+.conteudo_esquerdo_titulo {
+    font-size: 32px;
+    /* box-sizing: border-box; */
+}
+
+.conteudo_esquerdo_texto1 {
+    font-size: 14px;
+}
+
+.conteudo_esquerdo_mensagem {
+    margin: 0;
+    padding: 0;
+    width: 80vh;
+    height: 60vh;
+    background-color: var(--cor-primeiro);
+    border: none;
+    font-family: var(--fonte-primeiro);
+    color: var(--cor-terceiro);
+    outline: none;
+    font-size: 32px;
+   
+}
+
+.conteudo_esquerdo_botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.conteudo_esquerdo_botoes_botao {
+    display: flex;
+    background-color: var(--cor-terceiro);
+    padding: 2vh;
+    border-radius: 15px;
+    width: 40vh;
+    justify-content: center;
+    font-family: var(--fonte-primeiro);
+    color: var(--cor-primeiro);
+}
+
+.conteudo_direito {
+    padding: 2vh 2vh 2vh 2vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 40vh;
+    border: var(--cor-terceiro) solid 2px;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.conteudo_direito_imagem {
+    display: flex;
+}
+
+.conteudo_direito_texto3 {
+    display: flex;
+    font-family: var(--fonte-primeiro);
+    font-size: 16px;
+}
+
+.conteudo_direito_botoes {
+    display: none;
+    background-color: var(--cor-terceiro);
+    padding: 2vh 2vh 2vh 2vh;
+    border-radius: 15px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-primeiro);
+    color: var(--cor-primeiro);
+}

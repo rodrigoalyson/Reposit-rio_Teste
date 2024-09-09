@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MensagemSecreta</title>
+    <link rel="stylesheet" href="./01. Estilos/estilo01.css">
+</head>
+<body>
+    <header class="cabeçalho"></header>
+    <main class="conteudo">
+        <section class="conteudo_esquerdo">
+            <h1 class="conteudo_esquerdo_titulo">Criando uma Mensagem Secreta</h1>
+            <p1 class="conteudo_esquerdo_texto1">Pronto para se divertir compartilhando mensagens secretas com a gelera?</p1>
+            <input type="text" class="conteudo_esquerdo_mensagem" value="" placeholder="Digite sua mensagem" name="input_esquerda">
+            <p2>Não digite letras maiusculas e nem utilize acentos</p2>
+            <section class="conteudo_esquerdo_botoes">
+                <button onclick="codificar()" class="conteudo_esquerdo_botoes_botao">
+                    Criar Mensagem
+                </button>
+                <button onclick="decodificar()" class="conteudo_esquerdo_botoes_botao">
+                    Traduzir Mensagem
+                </button>
+            </section>
+            <div>
+                
+            </div>
+        </section>
+        <section class="conteudo_direito">
+            <img src="./02. Imagens/img01_pensando.png!w700wp" alt="Imagem inicial" height="200" width="230" class="conteudo_direito_imagem">
+            <h2 class="conteudo_direito_titulo2">Nenhuma mensagem encontrada</h2>
+            <p3 class="conteudo_direito_texto3">Digite uma mensagem para codificar ou decodificar.</p3>
+            <button class="conteudo_direito_botoes" onclick="copiar_texto()">
+                Copiar
+            </button>
+        </section>
+    </main>
+    <footer class="roda_pé">
+        <p>Desenvolvido por Alyson Arruda - 2024 - Projeto ONE</p>
+    </footer>
+    <script src="./app01.js" defer></script>
+</body>
+</html>

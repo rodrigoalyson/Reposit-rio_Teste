@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* ELEMENTOS FIQUEM DO TAMANHO DA TELA INDEPENDENTE DA TELA*/
+    height: 100vh;
+    /* PROPRIEDADE PARA COLOCAR TODOS OS ELEMENTOS FILHOS EM UMA UNICA LINHA*/
+    box-sizing: border-box;
+    background-color: #000000;
+    color: #f6f6f6;
+}
+
+.destaque_Titulo {
+    color: #22d4fd;
+}
+
+.respansivo-container{
+    display: flex;
+    /* AJUSTA OS ELEMENTOS DENTRO DA TAG ROW: EM LINHAS E COLUMN: COLUNAS*/
+    flex-direction: column;
+    /* AJUSTE AUTOMATICA - MUDAR DE LINHAS CONFORME O TAMANHO DA TELA*/
+    flex-wrap: wrap;
+    /* CENTRALIZAR OS ELEMENTOS DA TAG*/
+    align-items: center;
+    /* AJUSTE DE ALTURA*/
+    height: 300px;
+}
+
+.apresentacao {
+    /* TODOS OS ELEMENTOS EM UMA MESMA LINHA*/
+    display: flex;
+    flex-direction: row;
+    /* ELEMENTOS CENTRALIZADOS NO MEIO DA TELA*/
+    align-items: center;
+    /* COLOCA O ELEMENTO TEXTO A ESQUERDA*/
+    justify-content: space-between;
+}

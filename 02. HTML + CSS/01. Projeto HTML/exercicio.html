@@ -1,0 +1,163 @@
+<!--
+1) Espaçamento e margens com Flexbox
+Aqui, o objetivo é ajustar o espaçamento entre a seção de texto e a imagem para criar uma aparência semelhante ao design do Figma. Use a propriedade justify-content: space-between; em Flexbox para espaçar os elementos e adicione margens para evitar que os elementos fiquem colados nas bordas da tela.
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10%;
+}
+
+Utilize a propriedade justify-content: space-between; na classe .apresentacao para espaçar a seção de texto e a imagem.
+  .apresentacao {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10%;
+  }
+COPIAR CÓDIGO
+A margem de 10% ao redor do <main> evita que os elementos fiquem colados nas bordas.
+Após salvar, confira no navegador se o layout está de acordo com o design do Figma.
+
+2) Definindo o tamanho da seção de texto
+Nesta atividade, você irá ajustar o tamanho de uma seção de texto para que corresponda às especificações do design no Figma. Você vai adicionar uma nova classe chamada apresentacao__conteudo à tag <section> no HTML e, em seguida, definir a largura dessa seção no CSS usando a propriedade width. O valor específico da largura deve ser retirado do projeto no Figma.
+
+No CSS, defina a largura da seção usando a propriedade width. O valor da largura deve ser o mesmo encontrado no Figma:
+
+.apresentacao__conteudo {
+    width: 615px;
+}
+
+3) Ajustando tamanhos de títulos e textos
+O objetivo aqui é modificar o tamanho dos textos de títulos e parágrafos para que correspondam ao design no Figma. Você vai criar classes específicas para o título (apresentacao__conteudo__titulo) e para o texto (apresentacao__conteudo__texto) no HTML. Depois, no CSS, você usará a propriedade font-size para definir os tamanhos de fonte para estas classes, com os valores retirados do Figma.
+
+1 - No HTML, adicione classes específicas para o título e para o texto:
+
+<h1 class="apresentacao__conteudo__titulo">Título</h1>
+<p class="apresentacao__conteudo__texto">Texto</p>
+COPIAR CÓDIGO
+2 - No CSS, ajuste o tamanho da fonte para essas classes. Os valores devem ser os mesmos encontrados no Figma:
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+}
+COPIAR CÓDIGO
+3 - Salve as alterações e confira no navegador se os tamanhos dos textos estão correspondendo ao design do Figma.
+
+4) Importando e aplicando fontes do Google Fonts
+Nesta atividade, você irá importar as fontes "Krona One" e "Montserrat" do Google Fonts para o seu projeto web. Primeiro, você precisa pesquisar essas fontes no Google Fonts e utilizar a opção de @import para incluí-las no arquivo CSS. Em seguida, você aplicará essas fontes aos elementos de texto específicos na sua página, como títulos e parágrafos, usando a propriedade font-family.
+
+1 - Acesse o Google Fonts, procure pelas fontes "Krona One" e "Montserrat" e selecione os estilos desejados.
+
+2 - Utilize a opção @import para copiar o código de importação fornecido pelo Google Fonts:
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+COPIAR CÓDIGO
+3 - Cole este código no topo do seu arquivo CSS.
+
+5) Personalizando fontes de títulos e textos
+Depois de importar as fontes, você irá personalizar o estilo dos títulos e textos da página para que correspondam ao design no Figma. Você modificará a propriedade font-family para os elementos de título e texto no CSS, aplicando as fontes "Krona One" e "Montserrat" respectivamente. O objetivo é garantir que o estilo visual da página web esteja alinhado com o design proposto.
+
+1 - No arquivo CSS, aplique a fonte "Krona One" ao título:
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+COPIAR CÓDIGO
+2 - Aplique a fonte "Montserrat" ao texto:
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+COPIAR CÓDIGO
+3 - Salve as alterações e atualize a página no navegador para ver as fontes aplicadas corretamente.
+
+
+1) Espaçamento e tamanho dos botões
+Aqui, o desafio é ajustar o espaçamento e o tamanho dos botões. Após ter alinhado os botões horizontalmente com Flexbox, você precisa garantir que eles tenham um tamanho adequado e um espaçamento consistente entre si, conforme o design do projeto. Altere o CSS para ajustar o tamanho dos botões e adicione margem para criar o espaçamento correto.
+
+2) Melhorando a visibilidade dos botões
+Nesta atividade, seu foco será na acessibilidade e visibilidade dos botões. Guilherme mencionou a dificuldade em enxergar os botões. Portanto, aumente o tamanho da fonte, altere as cores e adicione efeitos como sombra ou borda para torná-los mais visíveis e atrativos. Use suas habilidades em CSS para melhorar a estética e a acessibilidade dos botões na página.
+
+3) Criando uma classe comum para botões
+Nesta atividade, você irá criar uma classe CSS comum para os botões "Instagram" e "GitHub" no seu projeto HTML. Essa classe terá propriedades de estilo que farão os botões se parecerem com os do design no Figma, incluindo cor de fundo, tamanho do texto, e arredondamento dos vértices.
+
+4) Ajustando o espaçamento interno dos botões
+O objetivo desta atividade é ajustar o espaçamento interno dos botões para que eles correspondam ao design no Figma. Você vai utilizar a propriedade padding para definir o espaço entre o texto do botão e suas bordas, garantindo que o layout seja consistente e visualmente agradável.
+
+5) Importando e aplicando a fonte correta
+Nesta atividade, você se concentrará em ajustar a fonte dos botões. Vai importar a fonte Montserrat com o peso 600 do Google Fonts e aplicá-la aos botões, garantindo que o texto corresponda exatamente ao design no Figma. Além disso, você removerá o sublinhado padrão dos links e ajustará a cor do texto.
+
+
+1) Espaçamento e tamanho dos botões
+Continuando no arquivo style.css, foque nas tags <a> dentro de .apresentacao__links.
+Defina um tamanho consistente para os botões utilizando propriedades como padding e font-size.
+Para o espaçamento, use a propriedade margin para adicionar espaço entre os botões.
+.apresentacao__links a {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+}
+COPIAR CÓDIGO
+2) Melhorando a visibilidade dos botões
+No arquivo style.css, trabalhe nas tags <a> dentro de .apresentacao__links.
+Aumente a fonte usando font-size para melhorar a legibilidade.
+Altere a cor de fundo e a cor da fonte para contrastar melhor.
+.apresentacao__links a {
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+COPIAR CÓDIGO
+3) Criando uma classe comum para botões
+No arquivo index.html, adicione a classe apresentacao__links__link às tags <a> dentro da <div class="apresentacao__links">.
+No arquivo style.css, crie a classe .apresentacao__links__link e adicione as propriedades de estilo como background-color, width, text-align, border-radius e font-size.
+.apresentacao__links__link {
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+}
+COPIAR CÓDIGO
+4) Ajustando o espaçamento interno dos botões
+No arquivo style.css, dentro da classe .apresentacao__links__link, ajuste o padding para 21.5px na parte superior e inferior, mantendo 0 nas laterais.
+.apresentacao__links__link {
+    padding: 21.5px 0;
+}
+COPIAR CÓDIGO
+5) Importando e aplicando a fonte correta
+Adicione o @import url da fonte Montserrat com peso 600 no início do arquivo style.css.
+Aplique a fonte Montserrat e o peso de fonte apropriado na classe .apresentacao__links__link, além de ajustar a cor do texto e remover a decoração do texto.
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.apresentacao__links__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    
+</body>
+</html>
